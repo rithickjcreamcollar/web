@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Lovers+Quarrel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.love-light-regular {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page {
+  height: 100vh; /* Set the height of each section to viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable scroll snapping */
+}
+
+.lover {
+  font-family: "Lovers Quarrel", cursive;
+}
+.section1 {
+  height: 100vh; /* Set the height of each section to viewport height */
+  scroll-snap-align: start; /* Snap each section to the start of the viewport when scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section2 {
+  height: 100vh; /* Set the height of each section to viewport height */
+  scroll-snap-align: start; /* Snap each section to the start of the viewport when scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section3 {
+  height: 100vh; /* Set the height of each section to viewport height */
+  scroll-snap-align: start; /* Snap each section to the start of the viewport when scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-us {
+  font-size: 50px;
+  font-family: "Lovers Quarrel";
+  letter-spacing: 7px;
+  color: #ca9f9f;
+}
+.jk {
+  font-size: 710px;
+  font-family: "Lovers Quarrel", cursive;
+  /* color: #ffd700; */
+  color: #450000;
+}
+.about {
+  font-size: 200px;
+  margin: auto;
+}
+.silk {
+  font-size: 71px;
+  font-family: "Love Light", cursive;
+  color: #ffd700;
+  position: relative;
+  left: -100px;
+  top: 29px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensures the iframe doesn't intercept mouse events */
+}
+.section1 {
+  background-color: #ff2353;
+  position: relative;
+}
+.nav-bar {
+  color: aliceblue;
+}
+.section2 {
+  background-color: #5e1675;
+  display: flex;
+}
+
+.section3 {
+  background-color: #005792;
+}
+
+@media only screen and (max-width: 600px) {
+  .jk {
+    font-size: 590px;
+    font-family: "Lovers Quarrel", cursive;
+    /* color: #ffd700; */
+    color: #450000;
+
+    position: relative;
+    left: 170px;
+  }
+
+  .silk {
+    font-size: 71px;
+    font-family: "Love Light", cursive;
+    color: #ffd700;
+    position: relative;
+    left: -100px;
+    top: 148px;
+    white-space: nowrap;
+  }
+
+  .about {
+    font-size: 71px;
+    color: #f8d082;
+    margin-top: 0;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  .about-us {
+    font-size: 40px;
+    font-family: "Lovers Quarrel";
+    letter-spacing: 7px;
+    color: #ca9f9f;
+  }
+}
