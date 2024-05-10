@@ -1,13 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Lovers+Quarrel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
+
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
@@ -24,6 +18,7 @@ html {
   height: 100vh; /* Set the height of each section to viewport height */
   overflow-y: scroll; /* Enable vertical scrolling */
   scroll-snap-type: y mandatory; /* Enable scroll snapping */
+  margin: 0;
 }
 
 .lover {
@@ -57,13 +52,21 @@ html {
   font-size: 50px;
   font-family: "Lovers Quarrel";
   letter-spacing: 7px;
-  color: #ca9f9f;
+  color: #ffffff;
 }
 .jk {
   font-size: 710px;
   font-family: "Lovers Quarrel", cursive;
   /* color: #ffd700; */
-  color: #450000;
+  color: #ffd70078;
+
+  animation: fadeInAnimation 5s;
+}
+.jk :hover {
+  font-size: 710px;
+  font-family: "Lovers Quarrel", cursive;
+  color: #ffd700;
+  cursor: not-allowed;
 }
 .about {
   font-size: 200px;
@@ -76,8 +79,17 @@ html {
   position: relative;
   left: -100px;
   top: 29px;
+  animation: fadeInAnimation 10s;
 }
 
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    opacity: 10; /* End with opacity 1 */
+  }
+}
 .background {
   position: absolute;
   top: 0;
@@ -87,30 +99,30 @@ html {
   pointer-events: none; /* Ensures the iframe doesn't intercept mouse events */
 }
 .section1 {
-  background-color: #ff2353;
+  background-image: url("../img/2.jpg");
   position: relative;
 }
 .nav-bar {
   color: aliceblue;
 }
 .section2 {
-  background-color: #5e1675;
+  background-image: url("../img/1.jpg");
   display: flex;
 }
 
 .section3 {
-  background-color: #005792;
+  background-image: url("../img/s22.jpg");
+  display: flex;
 }
-
 @media only screen and (max-width: 600px) {
   .jk {
     font-size: 590px;
     font-family: "Lovers Quarrel", cursive;
     /* color: #ffd700; */
-    color: #450000;
+    color: #ffffffc9;
 
     position: relative;
-    left: 170px;
+    left: 172px;
   }
 
   .silk {
@@ -134,6 +146,45 @@ html {
     font-size: 40px;
     font-family: "Lovers Quarrel";
     letter-spacing: 7px;
-    color: #ca9f9f;
+    color: #ffffff;
+  }
+  .section1 {
+    background-image: url("../img/m2.jpg");
+    background-size: 528px;
+    position: relative;
+    animation: increaseSize 100s;
+  }
+  .nav-bar {
+    color: aliceblue;
+  }
+  .section2 {
+    background-image: url("../img/m4.jpg");
+    background-size: 528px;
+    display: flex;
+    animation: increaseSize 100s;
+  }
+
+  .section3 {
+    background-color: #005792;
+    background-image: url("../img/m3.jpg");
+    background-size: 528px;
+    animation: increaseSizes 1000s;
+  }
+
+  @keyframes increaseSize {
+    from {
+      background-size: 528px;
+    }
+    to {
+      background-size: 800px; /* Adjust as needed */
+    }
+  }
+  @keyframes increaseSizes {
+    from {
+      background-size: 700px;
+    }
+    to {
+      background-size: 1000px; /* Adjust as needed */
+    }
   }
 }

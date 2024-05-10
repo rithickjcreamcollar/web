@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div className="page">
       <section className="section1" onClick={scrollToSection2}>
         <p className="jk">jk.</p>
-        <p className="silk">Silk Sarees</p>
+        <p className="silk"> Silk Sarees</p>
       </section>
       <section className="section2">
         <div className="about-us">
