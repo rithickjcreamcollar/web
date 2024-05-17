@@ -150,7 +150,7 @@
   }
   .section1 {
     background-image: url("../img/m2.jpg");
-    background-size: 628px;
+    /* background-size: 558px; */
     position: relative;
     animation: increaseSize 100s;
   }
@@ -159,7 +159,7 @@
   }
   .section2 {
     background-image: url("../img/m4.jpg");
-    background-size: 528px;
+    background-size: 558px;
     display: flex;
     animation: increaseSize 100s;
   }
@@ -167,13 +167,23 @@
   .section3 {
     background-color: #005792;
     background-image: url("../img/m3.jpg");
-    background-size: 528px;
+    background-size: 558px;
     animation: increaseSizes 1000s;
   }
-
+  h2.contact {
+    color: antiquewhite;
+    font-family: auto;
+  }
+  p.add {
+    position: relative;
+    top: -105px;
+    left: -88px;
+    font-size: medium;
+    color: antiquewhite;
+  }
   @keyframes increaseSize {
     from {
-      background-size: 528px;
+      background-size: 700px;
     }
     to {
       background-size: 800px; /* Adjust as needed */
