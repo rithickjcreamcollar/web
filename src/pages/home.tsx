@@ -27,8 +27,8 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="section3">
-        <h2>CONTACT US</h2>
-        <p>This is the third section.</p>
+        <h2 className="contact">THANK YOU FOR VISITING US!!</h2>
+        {/* <p className="add">gmail:jktraders17@gmail.com</p> */}
       </section>
     </div>
   );
