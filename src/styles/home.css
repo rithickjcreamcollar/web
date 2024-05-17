@@ -150,7 +150,7 @@
   }
   .section1 {
     background-image: url("../img/m2.jpg");
-    background-size: 528px;
+    background-size: 628px;
     position: relative;
     animation: increaseSize 100s;
   }
